@@ -1,5 +1,8 @@
 l = list(map(int,input().split()))
-if l[0]+l[1]==l[2]+l[3] or l[0]+l[2]==l[1]+l[3] or l[0]+l[3]==l[1]+l[2] or l[0]+l[1]+l[2]==l[3] or l[0]+l[2]+l[3]==l[1] or l[0]+l[1]+l[3]==l[2] or l[1]+l[3]+l[2]==l[0] :
+sum=0
+for i in range(len(l)):
+    sum=l[i]+sum
+if sum%2==0:
     print("YES")
 else:
     print("NO")
