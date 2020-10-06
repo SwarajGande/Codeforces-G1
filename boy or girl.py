@@ -1,5 +1,4 @@
 s = input()
-s = list(s)
 s = list(dict.fromkeys(s))
 n = len(s)
 if n%2==0:
