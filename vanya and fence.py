@@ -1,13 +1,13 @@
-n , h=list(map(int,input().split()))
-a = list(map(int,input().split()))[:n]
-w = 0
-w1 = 0
-w2 = 0
+n,h=list(map(int,input().split()))
+a=[]
+width=0
 for i in range(n):
-    if a[i]<=h:
-        w1 = w1+1
-for i in range(n):
-    if a[i]>h:
-        w2 = w2+2
-w = w1+w2
-print(w)
+    k=int(input())
+    a.append(k)
+for i in range(len(a)):
+    if (a[i]<=h):
+        width=width+1
+    else:
+        if (a[i]>h):
+            width=width+2
+print(width)
