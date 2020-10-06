@@ -1,4 +1,5 @@
-n = int(input())
+I=lambda:int(input())
+n =I()
 s = str(input())
 s1 = list(s)
 d = 0
